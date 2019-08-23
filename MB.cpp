@@ -176,7 +176,7 @@ int main(int argc, char **argv)
 
     while (ros ::ok())
     {
-        output.Gear =1; output.Speed =1; output.Steer_G =1; output.Steer_C =1; output.Brake =1; 
+        output.Gear =0; output.Speed =30; output.Steer_G =10; output.Steer_C =10; output.Brake =1; //임의로 준 값임
         pub_Driving.publish(output);
         //mb.ShowMB();
         ros::spinOnce();
@@ -184,3 +184,4 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
